@@ -1,13 +1,12 @@
 // Requiring modules
-const { colors, express, path, app } = require("./helpers/imports");
+const { express, path, app } = require("./helpers/imports");
+const { indexHTMLpath } = require("./helpers/serverToHTML");
 const { ListenAt } = require("./helpers/customListen");
-// Body-Parsing Middleware
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-// "Pointer" Middleware
-app.use(express.static("public"));
+const { startMiddleware } = require("./helpers/startMiddleware");
 
-app.get("*", (req, res) => res.send());
+startMiddleware();
+
+app.get("*", (req, res) => res.sendFile(path.join(__dirname, indexHTMLpath)));
 
 // Listening
 const PORT = process.env.PORT || 3001;
