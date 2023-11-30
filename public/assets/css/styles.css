@@ -26,12 +26,14 @@ body {
 
 .note-textarea {
   resize: none;
-  height: calc(100% - 63px);
+  /* TODO: Increased height of textarea to accommodate LARGE paragraphs */
+  height: 300px;
+  /* height: calc(100% - 63px); */
   padding-top: 15px;
 }
 
 .note-title {
-  height: 50px;
+  height: 70px;
   margin-top: 13px;
   font-size: 3rem;
 }
