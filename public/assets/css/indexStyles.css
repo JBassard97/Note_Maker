@@ -1,0 +1,7 @@
+body {
+  background: linear-gradient(90deg, black, rgb(13, 202, 240));
+}
+
+.bg-light {
+    border-radius: 10px;
+}

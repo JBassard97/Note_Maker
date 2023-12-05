@@ -1,0 +1,29 @@
+.col-8 {
+  background: linear-gradient(45deg, black, rgb(13, 202, 240));
+}
+
+.card {
+  background: linear-gradient(300deg, black, rgb(13, 202, 240));
+  margin-right: -12px;
+}
+
+.note-textarea,
+.note-title {
+  margin-top: 10px;
+  border-radius: 10px;
+  background: whitesmoke;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-group-item {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.list-group-item:hover,
+.note-textarea:hover,
+.note-title:hover {
+  opacity: 1;
+}
+
